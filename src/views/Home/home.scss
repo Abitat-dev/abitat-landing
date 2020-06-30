@@ -1,0 +1,98 @@
+$height:100vh;
+.home{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: $height;
+  color: #333;
+  min-height: 600px;
+  .column{
+    display: flex;
+  }
+  $widthColumn:50%;
+  .column:first-child{
+    justify-content: center;
+    padding-left: 5vw;
+    flex-direction: column;
+    width: $widthColumn;
+    &>div{
+        display: flex;
+    }
+    #title{
+        height: 40%;
+        min-height: 260px;
+        align-items: flex-end;
+        span{
+            font-size: 110px;
+            font-weight: bolder;
+        }
+    }
+    #intro{
+        height: 16%;
+        min-height: 104px;
+        span{
+            font-size: 28px;
+            font-weight: bolder;
+            line-height: 42px;
+        }
+    }
+    #base{
+      height: 20%;
+      min-height: 130px;
+      align-items: flex-end;
+      $base:5em;
+      #button{
+        width: $base;
+        height: $base;
+        background-color: #FF9A23;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        cursor: pointer;
+        img{
+          width: 40%;
+        }
+      }
+    }
+
+  }
+  .column:last-child{
+      width: $widthColumn;
+      flex-direction: row;
+      #circle{
+        position: absolute;
+        background-color: #FF9A23;
+        width: 77%;
+        height: 154vh;
+        bottom: 0vh;
+        top: -42vh;
+        right: -25vw;
+        border-radius: 100%;
+      }
+      #chef, #contra{
+        width: 100%;
+        z-index: 1;
+        display: flex;
+      }
+      #chef{
+          flex-direction: column;
+          align-items: flex-end;
+          img{
+            width: 20vw;
+            margin-top: 4vh;
+            margin-right: 3vw;
+          }
+      }
+      #contra{
+          align-items: center;
+          justify-content: flex-start;
+          img{
+            width: 26vw;
+            margin-left: -6vw;
+          }
+      }
+  }
+
+}

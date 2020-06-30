@@ -1,0 +1,46 @@
+$height:60vh;
+.about{
+    margin-top: 30vh;
+    display: flex;
+    width: 100%;
+    height: $height;
+    color: #333;
+    justify-content: center;
+    #deck{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        align-items: center;
+        justify-content: space-evenly;
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 55vh;
+            .circle{
+                width: 200px;
+                height: 200px;
+                background-color: #E0E0E0;
+                z-index: 0;
+                position: absolute;
+                border-radius: 100%;
+                margin-top: 6vh;
+            }
+            .image{
+                display: flex;
+                height: 30vh;
+                width: 100%;
+                justify-content: center;
+                z-index: 1;
+                img{
+                    height:100%
+                }
+            }
+            .text{
+                text-align: center;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+}
