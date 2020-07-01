@@ -1,22 +1,47 @@
 <template>
   <v-app>
-    <Home/>
-    <About/>
-    <Contact/>
+
+      <section class="home">
+        <div class="desktop-home container-fluid d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
+          <Home/>
+        </div>
+        <div class="mobile-home contact-fluid d-none d-sm-block d-md-none d-block d-sm-none">
+          <HomeM/>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="desktop-about container-fluid d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
+          <About/>
+        </div>
+      </section>
+      
+      <section class="contact">
+        <div class="desktop-contact d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
+          <Contact/>
+        </div>
+        <div class="mobile-contact contact-fluid d-none d-sm-block d-md-none d-block d-sm-none">
+          <ContactM/>
+        </div>
+      </section>
   </v-app>
 </template>
 
 <script>
 import Home from './views/Home/Home.vue';
 import About from './views/About/About.vue';
-import Contact from './views/Contact/Contact.vue'
+import Contact from './views/Contact/Contact.vue';
+import HomeM from './views/mobile/homeM/homeM.vue';
+import ContactM from './views/mobile/contactM/contactM.vue';
  
 export default {
   name: 'App',
   components: {
     Home,
     About,
-    Contact
+    Contact,
+    HomeM,
+    ContactM
   },
 
   data: () => ({
