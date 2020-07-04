@@ -1,7 +1,7 @@
 .homeM{
     display: flex;
     flex-direction: column;
-    background-color: #FF9A23;
+    background-color: #FF9A23; 
     width: 100vw;
     height: 100vh;
     color: white;
@@ -28,6 +28,7 @@
         width: 100%;
         align-items: center;
         justify-content: center;
+        text-align: center;
         .content{
             width: 80%;
             height: 80%;
@@ -61,9 +62,9 @@
             height: 60px;
             border-radius: 100%;
             background-color: #ffffff;
-            -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 0px 0px 15px 0px rgba(108, 108, 108, 0.75);
+            -moz-box-shadow: 0px 0px 15px 0px rgba(108, 108, 108, 0.75);
+            box-shadow: 0px 0px 15px 0px rgba(108, 108, 108, 0.75);
             img{
                 width: 40%;
             }

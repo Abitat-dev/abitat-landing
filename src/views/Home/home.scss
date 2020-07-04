@@ -64,8 +64,10 @@ $height:100vh;
       #circle{
         position: absolute;
         background-color: #FF9A23;
-        width: 77%;
+        width: 77vw;
+        min-width: 750px;
         height: 154vh;
+        min-height: 1000px;
         bottom: 0vh;
         top: -42vh;
         right: -25vw;
@@ -81,6 +83,7 @@ $height:100vh;
           align-items: flex-end;
           img{
             width: 20vw;
+            min-width: 250px;
             margin-top: 4vh;
             margin-right: 3vw;
           }
@@ -91,6 +94,7 @@ $height:100vh;
           img{
             width: 26vw;
             margin-left: -6vw;
+            min-width: 250px;
           }
       }
   }

@@ -101,8 +101,9 @@ button:focus, input[type=button], input[type=submit]{
     justify-content: center;
     margin-top: 25vh;
     height: $height;
-    width: 100vw;
+    width: 100%;
     background-color: #E0E0E0;
+    z-index: 1;
     #image{
         display: flex;
         width: 50%;
@@ -181,7 +182,6 @@ button:focus, input[type=button], input[type=submit]{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    justify-content: space-evenly;
                     ul{
                         padding: 0;
                         width:100%;

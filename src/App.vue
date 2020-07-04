@@ -1,26 +1,26 @@
 <template>
   <v-app>
 
-      <section class="home">
+      <section id="home">
         <div class="desktop-home container-fluid d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
           <Home/>
         </div>
-        <div class="mobile-home contact-fluid d-none d-sm-block d-md-none d-block d-sm-none">
+        <div class="mobile-home d-none d-sm-block d-md-none d-block d-sm-none">
           <HomeM/>
         </div>
       </section>
 
-      <section class="about">
+      <section id="about">
         <div class="desktop-about container-fluid d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
           <About/>
         </div>
       </section>
       
-      <section class="contact">
+      <section id="contact">
         <div class="desktop-contact d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
           <Contact/>
         </div>
-        <div class="mobile-contact contact-fluid d-none d-sm-block d-md-none d-block d-sm-none">
+        <div class="mobile-contact d-none d-sm-block d-md-none d-block d-sm-none">
           <ContactM/>
         </div>
       </section>

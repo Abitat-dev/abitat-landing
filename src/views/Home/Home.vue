@@ -4,7 +4,7 @@
       <div id="title">
         <span>{{title}}</span>
       </div>
-      <div id="intro">
+      <div id="intro" class="d-none d-lg-block d-xl-none">
         <span>
           {{intro[0]}}<br>
           {{intro[1]}}<br>
