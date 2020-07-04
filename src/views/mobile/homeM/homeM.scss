@@ -4,11 +4,13 @@
     background-color: #FF9A23; 
     width: 100vw;
     height: 100vh;
+    min-height: 350px;
     color: white;
     #intro{
         display: flex;
         flex-direction: column;
         height: 30%;
+        min-height: 200px;
         padding-left: 4vw;
         padding-right: 4vw;
         padding-top: 4vh;
@@ -53,6 +55,7 @@
         justify-content: flex-end;
         width: 100%;
         height: 15%;
+        min-height: 100px;
         padding-right: 2vh;
         .btn_play{
             display: flex;

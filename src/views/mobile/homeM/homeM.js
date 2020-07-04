@@ -12,5 +12,10 @@ export default {
                 intro3:'de toda la republica'
             }
         }
-    }
+    },
+    methods: {
+        play(){
+            window.open('https://www.youtube.com/watch?v=o-RYtJdinQs')
+        }
+    },
 }

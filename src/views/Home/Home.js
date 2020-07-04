@@ -18,7 +18,21 @@ export default {
         chef:'chef.png',
         contra:'construction.png',
         designer:'designer.png'
-      }
+      },
+      none:'none',
+      autoplay:''
     }
-  }
+  },
+  methods: {
+    play(){
+      this.autoplay=1;
+      this.none='flex';
+      document.documentElement.style.overflow = 'hidden';
+    },
+    stop(){
+      this.autoplay=0;
+      this.none='none';
+      document.documentElement.style.overflowY = 'scroll';
+    }
+  },
 }

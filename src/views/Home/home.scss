@@ -61,6 +61,9 @@ $height:100vh;
   .column:last-child{
       width: $widthColumn;
       flex-direction: row;
+      position: absolute;
+      right: 0;
+      z-index: 1;
       #circle{
         position: absolute;
         background-color: #FF9A23;
@@ -72,6 +75,7 @@ $height:100vh;
         top: -42vh;
         right: -25vw;
         border-radius: 100%;
+        /* display: none;*/
       }
       #chef, #contra{
         width: 100%;
@@ -98,5 +102,37 @@ $height:100vh;
           }
       }
   }
+  #video{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.285);
+    padding: 0;
+    margin-left: -1vw;
+    justify-content: center;
+    align-items: center;
+    span{
+      position: absolute;
+      align-self: flex-end;
+      top: 0;
+      right: 1vw;
+      color: white;
+      font-size: 60px;
+      cursor: pointer;
+    }
+  }
 
+}
+
+@media screen and (max-width:1100px){
+  .home{
+    .column:last-child{
+      #contra{
+        display: none;
+      }
+    }
+  }
 }

@@ -20,7 +20,7 @@
             </div>
         </div>
         <div id="play">
-            <div class="btn_play">
+            <div class="btn_play" @click="play()">
                 <img src="../../../assets/play-button.png" alt="play">
             </div>
         </div>
