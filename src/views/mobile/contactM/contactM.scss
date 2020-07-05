@@ -136,6 +136,7 @@ button{
                 .actions{
                     width: 90%;
                     height: 7vh;
+                    min-height: 58px;
                     border-radius: 10px;
                     color: white;
                     position: relative;
@@ -171,6 +172,7 @@ button{
                         border: solid 1px gray;
                         width: 100%;
                         height: 6vh;
+                        min-height: 50px;
                         border-radius: 15px;
                         margin-bottom: 3vh;
                         display: flex;
@@ -191,6 +193,7 @@ button{
                         justify-content: center;
                         align-items: center;
                         height: 6vh;
+                        min-height: 50px;
                         color: white;
                         border-radius: 10px;
                         width: 95%;

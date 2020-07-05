@@ -4,7 +4,7 @@
       <div id="title">
         <span>{{title}}</span>
       </div>
-      <div id="intro" class="d-md-none d-lg-block">
+      <div id="intro">
         <span>
           {{intro[0]}}<br>
           {{intro[1]}}<br>
@@ -24,7 +24,7 @@
       <iframe width="800" height="500" :src="'https://www.youtube.com/embed/o-RYtJdinQs?autoplay='+autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
     </div>
     <div class="column">
-      <div id="circle"></div>
+      <div id="circle" class="d-md-none d-lg-block"></div>
       <div id="contra">
         <img :src="require(`../../assets/${images.contra}`)" :alt="images.contra">
       </div>

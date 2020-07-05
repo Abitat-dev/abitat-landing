@@ -53,12 +53,15 @@ export default {
             this.displayOptions = 'flex';
             this.displaySelect = 'none';
         },
+        focus(){
+            this.$nextTick(()=>{
+                this.$refs.name.focus();
+            })  
+        },
         clear(){
             this.info='';
             this.name='';
-            this.$nextTick(()=>{
-                this.$refs.name.focus();
-            })
+            this.focus();
         },
         submit(){
             this.spinner=true;
@@ -68,13 +71,18 @@ export default {
                 this.spinner=false;
                 this.text = 'Asegurese de llenar correctamente el formulario';
                 this.snackbar=true;
-                console.log('usuario pendejo');
+                this.$nextTick(()=>{
+                    this.$refs.name.focus();
+                })
             }else{
                 if(this.mediaT=='phone'){
                     if(isNaN(this.info) || this.info.length<10){
                         this.spinner=false;
                         this.text = 'Asegurese de usar un numero telefonico valido'
                         this.snackbar=true;
+                        this.$nextTick(()=>{
+                            this.$refs.info.focus();
+                        })
                     }else{
                         send = true
                     }
@@ -85,7 +93,9 @@ export default {
                         this.spinner=false;
                         this.text = 'Asegurese de usar un correo electronico valido'
                         this.snackbar=true;
-                        console.log('correo no valido');
+                        this.$nextTick(()=>{
+                            this.$refs.info.focus();
+                        })
                     }
                 }
             }
@@ -100,7 +110,6 @@ export default {
                     this.snackColor='success';
                     this.snackbar=true;
                     this.text='Su informacion ha sido enviada';
-                    console.log(res);
                     this.clear();
                 })
                 .catch((err)=>{
@@ -109,6 +118,9 @@ export default {
                     this.snackbar=true;
                     this.text='Ocurrio un error al enviar datos';
                     console.log(err);
+                    this.$nextTick(()=>{
+                        this.$refs.name.focus();
+                    })
                 })
             }
         }

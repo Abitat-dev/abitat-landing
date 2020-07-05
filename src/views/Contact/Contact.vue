@@ -1,7 +1,14 @@
 <template>
     <div class="contact">
         <div v-if="spinner" id="loader">
-            <div class="loader">Loading...</div>
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
         </div>
         <div id="image">
             <img :src="require(`../../assets/${images.notification}`)" alt="notification">

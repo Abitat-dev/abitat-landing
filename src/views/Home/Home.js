@@ -28,6 +28,7 @@ export default {
       this.autoplay=1;
       this.none='flex';
       document.documentElement.style.overflow = 'hidden';
+      document.documentElement.scrollTop = 0;
     },
     stop(){
       this.autoplay=0;

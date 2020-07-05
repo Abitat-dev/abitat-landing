@@ -34,7 +34,7 @@
                         </div>
                         <div class="inputs">
                             <img :src="require(`../../../assets/${type}.png`)" alt="">
-                            <input type="text" :placeholder="placeholder2" v-model="info">
+                            <input ref="info" type="text" :placeholder="placeholder2" v-model="info">
                         </div>
                         <button type="submit" :style="'background-color:'+colorBtn+';'">
                             <div v-if="spinner">
@@ -56,6 +56,7 @@
         v-model="snackbar"
         :multi-line="multiLine"
         :color="snackColor"
+        top
         >
             {{ text }}
             <template v-slot:action="{ attrs }">
