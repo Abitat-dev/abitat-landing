@@ -47,14 +47,14 @@
                         </button>
                     </form>
                     <button class="back" @click="back('forms')">
-                        <img src="../../../assets/back.png" alt="back">
+                        <i class="fas fa-arrow-left"></i>
                     </button>
                 </div>
                 <div id="response" :style="'display:'+displaySend+';'">
                     <img src="../../../assets/response.png" alt="res">
                     <span>¡Pronto nos comunicaremos contigo!</span>
                     <button class="back" @click="back('response')">
-                        <img src="../../../assets/back.png" alt="back">
+                        <i class="fas fa-arrow-left"></i>
                     </button>
                 </div>
             </div>
