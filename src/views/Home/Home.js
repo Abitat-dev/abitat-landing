@@ -9,11 +9,7 @@ export default {
   data(){
     return{
       title:'abitat',
-      intro:[
-        'La aplicacion donde podras',
-        'ofrecer tus servicios a personas',
-        'de toda la republica'
-      ],
+      intro:"La aplicación donde podrás ofrecer tus servicios a personas de toda la republica",
       images:{
         chef:'chef.png',
         contra:'construction.png',

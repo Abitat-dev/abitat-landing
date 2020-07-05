@@ -2,13 +2,12 @@
   <div class="home">
     <div class="column">
       <div id="title">
+        <img src="../../assets/abitat-logo.png" alt="check" style ="width:100px">
         <span>{{title}}</span>
       </div>
       <div id="intro">
         <span>
-          {{intro[0]}}<br>
-          {{intro[1]}}<br>
-          {{intro[2]}}<br>
+        {{intro}}
         </span>
       </div>
       <div id="base">

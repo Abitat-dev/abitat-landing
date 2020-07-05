@@ -23,12 +23,14 @@ export default {
             text:'Asegurate de llenar el formulario',
             snackColor:'red',
             spinner:false,
-            multiLine:false
+            multiLine:false,
+            icon:''
         }
     },
     methods: {
         actions(e){
             if(e=='mail'){
+                this.icon = "far fa-envelope";
                 this.colorBtn='#39F';
                 this.title = 'Dejanos tu contacto';
                 this.placeholder = 'Carla Gonzalez';
@@ -38,6 +40,7 @@ export default {
                 this.type='mailF';
                 this.mediaT = e;
             }else if(e=='phone'){
+                this.icon = "fab fa-whatsapp";
                 this.colorBtn='#2AC940';
                 this.title = 'Ingresa tu telefono';
                 this.placeholder = 'Carla Gonzalez';

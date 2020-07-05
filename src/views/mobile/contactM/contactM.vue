@@ -9,7 +9,7 @@
                 </div>
                 <div id="options" :style="'display:'+displayOptions+';'">
                     <button class="actions" @click="actions('mail')">
-                        <img src="../../../assets/mail_btn.png" alt="">
+                        <i class="far fa-envelope" style="font-size:20px; margin:10px;"></i>
                         {{buttons.mail}}
                     </button>
                     <div id="option">
@@ -22,18 +22,18 @@
                         </span>
                     </div>
                     <button class="actions" @click="actions('phone')">
-                        <img src="../../../assets/whats_btn.png" alt="">
+                        <i class="fab fa-whatsapp" style="font-size:22px; margin:10px;"></i>
                         {{buttons.whats}}
                     </button>
                 </div>
                 <div id="select" :style="'display:'+displaySelect+';'">
                     <form id="form" @submit.prevent="submit">
                         <div class="inputs">
-                            <img src="../../../assets/userF.png" alt="user">
+                           <i class="far fa-user-circle" style="color:#b5b5b5; font-size:23px;"></i>
                             <input ref="name" type="text" :placeholder="placeholder" v-model="name">
                         </div>
                         <div class="inputs">
-                            <img :src="require(`../../../assets/${type}.png`)" alt="">
+                            <i :class="icon" style="color:#b5b5b5; font-size:23px;"></i>
                             <input ref="info" type="text" :placeholder="placeholder2" v-model="info">
                         </div>
                         <button type="submit" :style="'background-color:'+colorBtn+';'">
@@ -42,7 +42,7 @@
                             </div>
                             <div v-else>
                                 <span>Enviar</span>
-                                <img src="../../../assets/send.png" alt="send">
+                               <i class="fas fa-paper-plane" style="margin:8px; "></i>
                             </div>
                         </button>
                     </form>

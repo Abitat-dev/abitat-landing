@@ -26,6 +26,7 @@
       </section>
   </v-app>
 </template>
+<script src="https://kit.fontawesome.com/e0d2f08eea.js" crossorigin="anonymous"></script>
 
 <script>
 import Home from './views/Home/Home.vue';
@@ -49,3 +50,5 @@ export default {
   }),
 };
 </script>
+
+

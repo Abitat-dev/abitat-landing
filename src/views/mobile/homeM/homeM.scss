@@ -1,10 +1,9 @@
 .homeM{
     display: flex;
     flex-direction: column;
-    background-color: #FF9A23; 
+    background: linear-gradient(to bottom, #ff9a23,#fa8500);
+
     width: 100vw;
-    height: 100vh;
-    min-height: 350px;
     color: white;
     #intro{
         display: flex;
@@ -14,13 +13,22 @@
         padding-left: 4vw;
         padding-right: 4vw;
         padding-top: 4vh;
+        text-align: center;
+        margin-bottom: 40px;
         h1{
+            margin-top: 50px;
             font-weight: 600;
-            font-size: 50px;
+            font-size: 70px;
+            font-family:'Poppins', sans-serif;
         }
         p{
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 600;
+        }
+        #logo-nav{
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
     }
     #description{
@@ -65,9 +73,9 @@
             height: 60px;
             border-radius: 100%;
             background-color: #ffffff;
-            -webkit-box-shadow: 0px 0px 15px 0px rgba(108, 108, 108, 0.75);
-            -moz-box-shadow: 0px 0px 15px 0px rgba(108, 108, 108, 0.75);
-            box-shadow: 0px 0px 15px 0px rgba(108, 108, 108, 0.75);
+            -webkit-box-shadow: 0px 0px 15px 0px rgba(36, 35, 35, 0.397);
+            -moz-box-shadow: 0px 0px 15px 0px rgba(44, 44, 44, 0.507);
+            box-shadow: 0px 0px 15px 0px rgba(36, 36, 36, 0.418);
             img{
                 width: 40%;
             }

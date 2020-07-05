@@ -37,7 +37,7 @@
                     </div>
                     <div @click="optionsBool=true" id="media">
                         <img :src="require(`../../assets/${media}`)" :alt="media">
-                        <span>▼</span>
+                        <i class="fas fa-sort-down"></i>
                     </div>
                     <div class="inputs">
                         <input ref="options" v-model="info" type="text" :placeholder="placeOption">
@@ -67,6 +67,7 @@
             </template>
         </v-snackbar>
     </div>
+    
 </template>
 
 <script src="./contact.js"></script>

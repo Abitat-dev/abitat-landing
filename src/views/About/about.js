@@ -11,19 +11,19 @@ export default {
         cards:[
             {
                 id:1,
-                image:'check.png',
+                image:'png1.png',
                 text1:'Encuentra clientes',
                 text2:'cerca de ti'
             },
             {
                 id:2,
-                image:'money.png',
+                image:'png2.png',
                 text1:'Gana dinero en tus',
                 text2:'ratos libres'
             },
             {
                 id:3,
-                image:'online.png',
+                image:'png3.png',
                 text1:'Llega a personas en',
                 text2:'otros lugares'
             }

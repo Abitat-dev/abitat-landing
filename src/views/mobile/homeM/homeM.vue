@@ -1,7 +1,11 @@
 <template>
     <div class="homeM">
         <div id="intro">
+        <div id="logo-nav">
+         <img src="../../../assets/abitat-light.png" alt="check"  style ="width:50px">
+        </div>
             <h1>
+               
                 {{title}}
             </h1>
             <p>
@@ -18,10 +22,13 @@
                     cerca de ti<br>
                 </p>
             </div>
+            
         </div>
+
+        
         <div id="play">
             <div class="btn_play" @click="play()">
-                <img src="../../../assets/play-button.png" alt="play">
+               <i class="fas fa-play" style="color:#FF9A23"></i>
             </div>
         </div>
     </div>
