@@ -39,6 +39,7 @@ export default {
                 this.displaySelect = 'flex';
                 this.type='mailF';
                 this.mediaT = e;
+                this.focus();
             }else if(e=='phone'){
                 this.icon = "fab fa-whatsapp";
                 this.colorBtn='#2AC940';
@@ -49,6 +50,7 @@ export default {
                 this.displaySelect = 'flex';
                 this.type='whatsF';
                 this.mediaT=e;
+                this.focus();
             }
         },
         back(){
