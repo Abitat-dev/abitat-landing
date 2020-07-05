@@ -10,8 +10,10 @@ export default {
                 whats:'Dejanos tu wha',
                 mail:'Dejanos tu correo'
             },
-            displayOptions:'flex',
-            displaySelect:'none',
+            displaySend:'none',//none
+            displayOptions:'flex',//flex
+            displaySelect:'none',//none
+            displayTitle:'flex',//flex
             placeholder:'',
             placeholder2:'',
             type:'mailF',
@@ -24,7 +26,7 @@ export default {
             snackColor:'red',
             spinner:false,
             multiLine:false,
-            icon:''
+            icon:'',
         }
     },
     methods: {
@@ -53,10 +55,17 @@ export default {
                 this.focus();
             }
         },
-        back(){
-            this.title='¿Te interesa?';
-            this.displayOptions = 'flex';
-            this.displaySelect = 'none';
+        back(from){
+            if(from=='forms'){
+                this.title='¿Te interesa?';
+                this.displayOptions = 'flex';
+                this.displaySelect = 'none';
+            }else if(from=='response'){
+                this.displaySend='none';
+                this.displayOptions='flex';
+                this.displaySelect='none';
+                this.displayTitle='flex';
+            }
         },
         focus(){
             this.$nextTick(()=>{
@@ -111,6 +120,10 @@ export default {
                     contact:this.info
                 })
                 .then((res)=>{
+                    this.displaySend='flex';
+                    this.displayOptions='none';
+                    this.displaySelect='none';
+                    this.displayTitle='none';
                     this.spinner=false;
                     this.snackColor='success';
                     this.snackbar=true;

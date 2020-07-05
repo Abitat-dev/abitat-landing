@@ -2,7 +2,7 @@
     <div class="contactM">
         <section id="content">
             <div id="deck">
-                <div id="title">
+                <div id="title" :style="'display:'+displayTitle+';'">
                     <span>
                         {{title}}
                     </span>
@@ -46,7 +46,14 @@
                             </div>
                         </button>
                     </form>
-                    <button id="back" @click="back">
+                    <button class="back" @click="back('forms')">
+                        <img src="../../../assets/back.png" alt="back">
+                    </button>
+                </div>
+                <div id="response" :style="'display:'+displaySend+';'">
+                    <img src="../../../assets/response.png" alt="res">
+                    <span>¡Pronto nos comunicaremos contigo!</span>
+                    <button class="back" @click="back('response')">
                         <img src="../../../assets/back.png" alt="back">
                     </button>
                 </div>
