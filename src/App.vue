@@ -1,22 +1,48 @@
 <template>
   <v-app>
-    <Home/>
-    <About/>
-    <Contact/>
+
+      <section id="home">
+        <div>
+          <Home/>
+        </div>
+        <div class="mobile-home d-none d-sm-block d-md-none d-block d-sm-none">
+          <HomeM/>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="desktop-about container-fluid d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
+          <About/>
+        </div>
+      </section>
+      
+      <section id="contact">
+        <div class="desktop-contact d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
+          <Contact/>
+        </div>
+        <div class="mobile-contact d-none d-sm-block d-md-none d-block d-sm-none">
+          <ContactM/>
+        </div>
+      </section>
   </v-app>
 </template>
+<script src="https://kit.fontawesome.com/e0d2f08eea.js" crossorigin="anonymous"></script>
 
 <script>
 import Home from './views/Home/Home.vue';
 import About from './views/About/About.vue';
-import Contact from './views/Contact/Contact.vue'
+import Contact from './views/Contact/Contact.vue';
+import HomeM from './views/mobile/homeM/homeM.vue';
+import ContactM from './views/mobile/contactM/contactM.vue';
  
 export default {
   name: 'App',
   components: {
     Home,
     About,
-    Contact
+    Contact,
+    HomeM,
+    ContactM
   },
 
   data: () => ({
@@ -24,3 +50,5 @@ export default {
   }),
 };
 </script>
+
+

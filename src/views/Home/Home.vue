@@ -1,32 +1,32 @@
 <template>
+
   <div class="home">
     <div class="column">
+    
       <div id="title">
+      <img src="../../assets/abitat-logo.png" alt="check" style ="width:60px">
         <span>{{title}}</span>
       </div>
       <div id="intro">
         <span>
-          {{intro[0]}}<br>
-          {{intro[1]}}<br>
-          {{intro[2]}}<br>
+        Comienza a generar ingresos, ofreciendo tus servicios a personas de toda la republica
         </span>
       </div>
       <div id="base">
-        <div id="button">
-          <img src="../../assets/play.png" alt="play">
-        </div>
+      
+        <button id="button" @click="play()">   
+        <i class="fas fa-play"></i>
+        <span> Conoce más </span>
+        </button>
       </div>
     </div>
-    <div class="column">
-      <div id="circle"></div>
-      <div id="contra">
-        <img :src="require(`../../assets/${images.contra}`)" :alt="images.contra">
-      </div>
-      <div id="chef">
-        <img :src="require(`../../assets/${images.chef}`)" :alt="images.chef">
-        <img :src="require(`../../assets/${images.designer}`)" :alt="images.designer">
-      </div>
+    <div id="video" :style="'display:'+none+';'">
+      <span @click="stop" class="material-icons">
+        close
+      </span>
+      <iframe width="800" height="500" :src="'https://www.youtube.com/embed/o-RYtJdinQs?autoplay='+autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
     </div>
+    
   </div>
 </template>
 
