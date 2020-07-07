@@ -2,7 +2,7 @@
     <div class="homeM">
         <div id="intro">
         <div id="logo-nav">
-         <img src="../../../assets/abitat-light.png" alt="check"  style ="width:50px">
+         <img src="../../../assets/abitat-light.png" alt="check">
         </div>
             <h1>
                

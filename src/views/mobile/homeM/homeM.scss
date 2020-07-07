@@ -30,6 +30,9 @@
             display: flex;
             justify-content: center;
             width: 100%;
+            img{
+                width:50px
+            }
         }
     }
     #description{
@@ -82,4 +85,44 @@
             }
         }
     }
+}
+
+@media only screen and (min-width: 750px) and(min-height:900px) {
+     .homeM{
+         #intro{
+             h1{
+                 font-size: 12vw;
+             }
+             p{
+                 font-size: 4vw;
+             }
+             #logo-nav{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                img{
+                    width: 12vw;
+                }
+            }
+         }
+         #description{
+             .content{
+                 img{
+                     width:35vw;
+                 }
+                 p{
+                     font-size: 4vw;
+                 }
+             }
+         }
+         #play{
+             .btn_play{
+                 width: 10vh;
+                 height: 10vh;
+                 i{
+                     font-size: 5vw;
+                 }
+             }
+         }
+     }
 }
