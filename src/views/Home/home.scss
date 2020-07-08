@@ -12,7 +12,6 @@ $height:100vh;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
   margin: 0;
   padding: 0;
   .column{
@@ -59,7 +58,8 @@ $height:100vh;
       #button{
         outline: none;
         padding: 10px;
-        width: 200px;
+        width: 18vw;
+        height: 8vh;
         background-color: #FF9A23;
         display: flex;
         justify-content: center;
@@ -165,4 +165,27 @@ $height:100vh;
   font-family:'Poppins', sans-serif;
   font-weight: bolder;
   font-size: 30px;
+}
+
+@media only screen and (min-width: 900px) and(min-height:1200px){
+  .home{
+    height: 50vh;
+    max-height: 700px;
+    .column:first-child{
+      #intro{
+        height: 20%;
+        span{
+          width: 80%;
+          font-size: 26px;
+        }
+      }
+      #base{
+        #button{
+          height: 5vh;
+          width: 22vw;
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }

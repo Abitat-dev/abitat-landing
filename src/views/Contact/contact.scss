@@ -73,12 +73,12 @@ button:focus, input[type=button], input[type=submit]{
 }
 .contact{
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    margin-top: 25vh;
+    /* margin-top: 25vh; */
     height: $height;
     width: 100%;
-    background-color: rgb(248, 132, 43);
+    background-color: #f8842b;
     z-index: 1;
     #image{
         display: flex;
@@ -121,11 +121,13 @@ button:focus, input[type=button], input[type=submit]{
                 background-color: white;
                 width: 100%;
                 height: $altura;
+                max-height: 50px;
                 border-radius: 10px;
                 input[type=text], input[type=email]{
                     outline: none;
                     height: $altura;
                     width: 90%;
+                    max-height: 50px;   
                 }
             }
             .infoContact{
@@ -156,6 +158,8 @@ button:focus, input[type=button], input[type=submit]{
                     position: absolute;
                     width: 120px;
                     height: 100px;
+                    min-height: 100px;
+                    min-width: 120px;
                     background-color: white;
                     z-index: 1;
                     border-radius: 5%;
@@ -200,6 +204,7 @@ button:focus, input[type=button], input[type=submit]{
                 width: 20%;
                 height: 100%;
                 min-width: 100px;
+                max-height: 50px;
                 color: white;
                 border: solid 1px rgb(255, 255, 255);
                 border-radius: 5%;
@@ -218,6 +223,7 @@ button:focus, input[type=button], input[type=submit]{
                 width: 20%;
                 height: 100%;
                 min-width: 100px;
+                max-height: 50px;
                 color: rgb(0, 0, 0);
                 background-color: rgb(255, 255, 255);
                 border-radius: 5%;
@@ -227,6 +233,47 @@ button:focus, input[type=button], input[type=submit]{
                 transition: .5s;
                 &:hover{
                     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+                }
+            }
+        }
+    }
+}
+
+$heightM:30vh;
+$fontsM:40px;
+@media only screen and (min-width: 900px) and(min-height:1200px){
+    .contact{
+        height: $heightM;
+        #image{
+            height: $heightM;
+        }
+        #formulario{
+            height: $heightM;
+            #title{
+                span:first-child{
+                    font-size: $fontsM;
+                }
+                span:last-child{
+                    font-size: $fontsM/2.2;
+                }
+            }
+            #form{
+                height: 18vh;
+                min-height: 235px;
+                .inputs{
+                    background-color: white;
+                    width: 100%;
+                    height: $altura;
+                    max-height: 50px;
+                    min-height: 50px;
+                    border-radius: 10px;
+                    input[type=text], input[type=email]{
+                        outline: none;
+                        height: $altura;
+                        width: 90%;
+                        max-height: 50px;
+                        min-height: 50px;
+                    }
                 }
             }
         }

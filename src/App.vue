@@ -11,7 +11,7 @@
       </section>
 
       <section id="about">
-        <div class="desktop-about container-fluid d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
+        <div class="desktop-about d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
           <About/>
         </div>
       </section>
