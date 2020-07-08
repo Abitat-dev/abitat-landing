@@ -5,8 +5,16 @@ $height:100vh;
   justify-content: flex-start;
   width: 100%;
   height: $height;
-  color: #333;
+  color: white;
   min-height: 600px;
+  background-image: url('../../assets/house4.jpg');
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  margin: 0;
+  padding: 0;
   .column{
     display: flex;
   }
@@ -20,7 +28,7 @@ $height:100vh;
         display: flex;
     }
     #title{
-        height: 40%;
+        height: 30%;
         min-height: 260px;
         align-items: flex-end;
         span{
@@ -35,37 +43,46 @@ $height:100vh;
         height: 16%;
         min-height: 104px;
         span{
-            font-size: 23px;
+          font-family:'Poppins', sans-serif;
+            font-size: 25px;
             font-weight: normal;
             line-height: 30px;
-            width:60%;
+            width:70%;
         }
     }
     #base{
+      margin-top: 20px;
       height: 20%;
       min-height: 130px;
-      align-items: flex-end;
+      align-items: flex-start;
       $base:5em;
       #button{
-        width: $base;
-        height: $base;
+        outline: none;
+        padding: 10px;
+        width: 200px;
         background-color: #FF9A23;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 100%;
+        border-radius:  100px;
+        font-weight: bold;
         cursor: pointer;
-        -webkit-box-shadow: 2px 6px 179px -2px rgba(179,179,179,1);
-        -moz-box-shadow: 2px 6px 179px -2px rgba(179,179,179,1);
-        box-shadow: 2px 6px 179px -2px rgba(179,179,179,1);
+        -webkit-box-shadow: -1px 4px 42px -18px rgba(99,99,99,1);
+        -moz-box-shadow: -1px 4px 42px -18px rgba(99,99,99,1);
+        box-shadow: -1px 4px 42px -18px rgba(99,99,99,1);
         transition: .5s;
         &:hover{
-          -webkit-box-shadow: 0px 0px 10px 0px rgb(255, 136, 0);
-          -moz-box-shadow: 0px 0px 10px 0px rgba(255, 136, 0, 0.75);
-          box-shadow: 0px 0px 10px 0px rgba(255, 136, 0, 0.75);
+          -webkit-box-shadow:none;
+          -moz-box-shadow: none;
+          box-shadow:none;
+
+          background-color: rgb(218, 129, 29);
         }
         img{
           width: 40%;
+        }
+        i{
+          margin: 5px;
         }
       }
     }
@@ -124,7 +141,6 @@ $height:100vh;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.285);
     padding: 0;
-    margin-left: -1vw;
     justify-content: center;
     align-items: center;
     span{
@@ -140,16 +156,13 @@ $height:100vh;
 
 }
 
-@media screen and (max-width:1000px){
-  .home{
-    .column:last-child{
-      #contra{
-        display: none;
-      }
-      #circle{
-        position: fixed;
-        // display: none;
-      }
-    }
-  }
+.header{
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+.banner{
+  font-family:'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
 }

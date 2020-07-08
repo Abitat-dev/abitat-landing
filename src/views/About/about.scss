@@ -18,23 +18,22 @@ $height:60vh;
             justify-content: space-between;
             height: 55vh;
             border: none;
-           
             .image{
                 display: flex;
-                height: 30vh;
+                height: 35vh;
                 width: 100%;
+                min-width: 350px;
                 justify-content: center;
                 z-index: 1;
                 img{
                     width:65%;
                     min-width: 200px;
-
                 }
             }
             .text{
                 text-align: center;
                 font-size: 20px;
-                font-weight: 600;
+                font-weight: 500;
             }
         }
     }

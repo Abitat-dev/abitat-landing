@@ -2,7 +2,7 @@
   <v-app>
 
       <section id="home">
-        <div class="desktop-home container-fluid d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
+        <div class="desktop-home d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
           <Home/>
         </div>
         <div class="mobile-home d-none d-sm-block d-md-none d-block d-sm-none">

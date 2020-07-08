@@ -2,7 +2,7 @@
   <div class="home">
     <div class="column">
       <div id="title">
-        <img src="../../assets/abitat-logo.png" alt="check" style ="width:100px">
+      <img src="../../assets/abitat-logo.png" alt="check" style ="width:60px">
         <span>{{title}}</span>
       </div>
       <div id="intro">
@@ -11,9 +11,10 @@
         </span>
       </div>
       <div id="base">
-        <div id="button" @click="play()">
-          <img src="../../assets/play.png" alt="play">
-        </div>
+        <button id="button" @click="play()">   
+          <i class="fas fa-play"></i>
+          <span> Conoce más </span>
+        </button>
       </div>
     </div>
     <div id="video" :style="'display:'+none+';'">
@@ -21,16 +22,6 @@
         close
       </span>
       <iframe width="800" height="500" :src="'https://www.youtube.com/embed/o-RYtJdinQs?autoplay='+autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
-    </div>
-    <div class="column">
-      <div id="circle" class="d-md-none d-lg-block"></div>
-      <div id="contra">
-        <img :src="require(`../../assets/${images.contra}`)" :alt="images.contra">
-      </div>
-      <div id="chef">
-        <img :src="require(`../../assets/${images.chef}`)" :alt="images.chef">
-        <img :src="require(`../../assets/${images.designer}`)" :alt="images.designer">
-      </div>
     </div>
   </div>
 </template>

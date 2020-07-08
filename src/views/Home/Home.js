@@ -9,7 +9,7 @@ export default {
   data(){
     return{
       title:'abitat',
-      intro:"La aplicación donde podrás ofrecer tus servicios a personas de toda la republica",
+      intro:"Comienza a generar ingresos, ofreciendo tus servicios a personas de toda la republica",
       images:{
         chef:'chef.png',
         contra:'construction.png',
@@ -30,6 +30,21 @@ export default {
       this.autoplay=0;
       this.none='none';
       document.documentElement.style.overflowY = 'scroll';
+    },
+    escape(event){
+      if(event.keyCode==27){
+        this.stop();
+      }
     }
+  },
+  created() {
+    this.$nextTick(()=>{
+      window.addEventListener('keyup', this.escape)
+    })
+  },
+  destroyed() {
+    this.$nextTick(()=>{
+      window.removeEventListener('keyup', this.escape)
+    })
   },
 }
