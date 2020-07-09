@@ -1,4 +1,5 @@
 $height:60vh;
+$heightpx:430px;
 $fonts: 35px;
 $altura:8vh;
 $ancho:30vw;
@@ -75,8 +76,8 @@ button:focus, input[type=button], input[type=submit]{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 25vh; */
     height: $height;
+    min-height: $heightpx;
     width: 100%;
     background-color: #f8842b;
     z-index: 1;
@@ -84,11 +85,14 @@ button:focus, input[type=button], input[type=submit]{
         display: flex;
         width: 50%;
         height: $height;
+        min-height: $heightpx;
         flex-direction: column-reverse;
         align-items: center;
         img{
             width: 25vw;
             position: absolute;
+            min-height: 450px;
+            min-width: 350px;
         }
     }
     #formulario{
@@ -98,6 +102,7 @@ button:focus, input[type=button], input[type=submit]{
         width: 50%;
         text-align: center;
         height: $height;
+        min-height: $heightpx;
         justify-content: space-evenly;
         #title{
             font-weight: bolder;
@@ -116,18 +121,21 @@ button:focus, input[type=button], input[type=submit]{
             flex-direction: column;
             justify-content: space-between;
             height: 30vh;
+            min-height: 180px;
             width: $ancho+5;
             .inputs{
                 background-color: white;
                 width: 100%;
                 height: $altura;
                 max-height: 50px;
+                min-height: 50px;
                 border-radius: 10px;
                 input[type=text], input[type=email]{
                     outline: none;
                     height: $altura;
                     width: 90%;
-                    max-height: 50px;   
+                    max-height: 50px;    
+                    min-height: 50px;
                 }
             }
             .infoContact{
@@ -199,6 +207,7 @@ button:focus, input[type=button], input[type=submit]{
         #buttons{
             display: flex;
             height: 6vh;
+            height: 35px;
             justify-content: flex-end;
             #cancel{
                 width: 20%;

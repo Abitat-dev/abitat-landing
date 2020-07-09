@@ -4,6 +4,7 @@ $height:100vh;
     display: flex;
     width: 100%;
     height: $height;
+    min-height: 600px;
     color: #333;
     justify-content: center;
     #deck{
@@ -17,10 +18,12 @@ $height:100vh;
             flex-direction: column;
             justify-content: space-between;
             height: $height/2;
+            min-height: 300px;
             border: none;
             .image{
                 display: flex;
                 height: 35vh;
+                min-height: 230px;
                 width: 100%;
                 justify-content: center;
                 z-index: 1;
