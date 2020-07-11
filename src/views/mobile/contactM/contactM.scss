@@ -236,21 +236,21 @@ button{
       #deck{
         #title{
           span{
-            font-size: 6vw;
+            font-size: 35px;
           }
         }
         #options{
           #option{
             span:nth-child(2){
-              font-size: 3vw;
+              font-size: 20px;
             }
           }
           .actions{
             height: 9vh;
             min-height: 70px;
-            font-size: 4vw;
+            font-size: 28px;
             i{
-              font-size: 4vw;
+              font-size: 28px;
             }
           }
         }
@@ -266,13 +266,13 @@ button{
                 font-size: 5vw;
               }
               input[type=text]{
-                  font-size: 4vw;
+                  font-size: 28px;
               }
             }
             button{
               height: 7vh;
               min-height: 60px;
-              font-size: 4vw;
+              font-size: 28px;
             }
           }
         }

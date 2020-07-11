@@ -9,7 +9,7 @@ export default {
   data(){
     return{
       title:'abitat',
-      intro:"Comienza a generar ingresos, ofreciendo tus servicios a personas de toda la republica",
+      intro:"Comienza a generar ingresos, ofreciendo tus servicios a personas de toda la república",
       images:{
         chef:'chef.png',
         contra:'construction.png',

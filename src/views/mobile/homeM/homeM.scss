@@ -4,12 +4,12 @@
     background: linear-gradient(to bottom, #ff9a23,#fa8500);
     width: 100vw;
     color: white;
-    height: 120vh;
+    height: 100vh;
     min-height: 750px;
     #intro{
         display: flex;
         flex-direction: column;
-        height: 30%;
+        height: 45%;
         min-height: 200px;
         padding-left: 4vw;
         padding-right: 4vw;
@@ -29,6 +29,7 @@
         #logo-nav{
             display: flex;
             justify-content: center;
+            align-items: center;
             width: 100%;
             img{
                 width:50px
@@ -38,14 +39,14 @@
     #description{
         display: flex;
         flex-direction: column;
-        height: 55%;
+        height: 40%;
         width: 100%;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         text-align: center;
         .content{
             width: 80%;
-            height: 80%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -87,14 +88,16 @@
     }
 }
 
-@media only screen and (min-width: 750px) and(min-height:900px) {
+@media only screen and (min-width: 600px) and (min-height:750px) {
      .homeM{
-         #intro{
+         min-height: 950px;
+         #intro{   
+            min-height: 430px;
              h1{
-                 font-size: 12vw;
+                 font-size: 70px;
              }
              p{
-                 font-size: 4vw;
+                 font-size: 25px;
              }
              #logo-nav{
                 display: flex;
@@ -108,10 +111,11 @@
          #description{
              .content{
                  img{
-                     width:35vw;
+                     width:50%;
+                     height: 100%;
                  }
                  p{
-                     font-size: 4vw;
+                     font-size: 25px;
                  }
              }
          }
@@ -120,9 +124,52 @@
                  width: 10vh;
                  height: 10vh;
                  i{
-                     font-size: 5vw;
+                     font-size: 32px;
                  }
              }
          }
      }
+}
+
+@media only screen and (min-width: 730px) and (min-height:900px) {
+    .homeM{
+        min-height: 950px;
+        #intro{   
+           min-height: 430px;
+            h1{
+                font-size: 88px;
+            }
+            p{
+                font-size: 28px;
+            }
+            #logo-nav{
+               display: flex;
+               justify-content: center;
+               width: 100%;
+               img{
+                   width: 12vw;
+               }
+           }
+        }
+        #description{
+            .content{
+                img{
+                    width:50%;
+                    height: 100%;
+                }
+                p{
+                    font-size: 28px;
+                }
+            }
+        }
+        #play{
+            .btn_play{
+                width: 10vh;
+                height: 10vh;
+                i{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
 }

@@ -7,8 +7,8 @@ export default {
         return{
             title:'¿Te interesa?',
             buttons:{
-                whats:'Dejanos tu wha',
-                mail:'Dejanos tu correo'
+                whats:'Déjanos tu wha',
+                mail:'Déjanos tu correo'
             },
             displaySend:'none',//none
             displayOptions:'flex',//flex

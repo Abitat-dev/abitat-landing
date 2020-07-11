@@ -7,7 +7,7 @@ export default {
         return{
             texto:{
                 title:'¿Te interesa?',
-                subtitle:'Dejanos tu contacto y te echamos un grito'
+                subtitle:'Déjanos tu contacto y te echamos un grito'
             },
             images:{
                 message:'mail.png',
