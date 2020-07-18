@@ -114,10 +114,16 @@ export default {
                 }
             }
             if(send){
-                this.axios.post('Https://func-backend-abitat-dev.azurewebsites.net/api/SetHandymanLandingPage?code=dVYEQFelotF/1dEazDKdVXibNZamarpeYVhNl8YpD6Hg3vVMuziKUA==', {
-                    name:this.name,
-                    type:this.mediaT,
-                    contact:this.info
+                let url = 'Https://func-backend-abitat-dev.azurewebsites.net/api/SetHandymanLandingPage?code=dVYEQFelotF/1dEazDKdVXibNZamarpeYVhNl8YpD6Hg3vVMuziKUA=='
+                this.axios({
+                    method:'POST',
+                    url:url,
+                    headers:{
+                        name:this.name,
+                        type:this.mediaT,
+                        contact:this.info
+                    },
+                    data:'ok'
                 })
                 .then((res)=>{
                     this.displaySend='flex';
