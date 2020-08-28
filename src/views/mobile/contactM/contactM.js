@@ -7,7 +7,7 @@ export default {
         return{
             title:'¿Te interesa?',
             buttons:{
-                whats:'Déjanos tu wha',
+                whats:'Déjanos tu WA',
                 mail:'Déjanos tu correo'
             },
             displaySend:'none',//none
@@ -34,7 +34,7 @@ export default {
             if(e=='mail'){
                 this.icon = "far fa-envelope";
                 this.colorBtn='#39F';
-                this.title = 'Dejanos tu contacto';
+                this.title = 'Déjanos tu contacto';
                 this.placeholder = 'Carla Gonzalez';
                 this.placeholder2 = 'carla@mail.com'
                 this.displayOptions = 'none';
@@ -45,7 +45,7 @@ export default {
             }else if(e=='phone'){
                 this.icon = "fab fa-whatsapp";
                 this.colorBtn='#2AC940';
-                this.title = 'Ingresa tu telefono';
+                this.title = 'Ingresa tu teléfono';
                 this.placeholder = 'Carla Gonzalez';
                 this.placeholder2 = '555-256-4063'
                 this.displayOptions = 'none';

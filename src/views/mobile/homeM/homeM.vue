@@ -27,6 +27,7 @@
             <div class="btn_play" @click="play()">
                <i class="fas fa-play" style="color:#FF9A23"></i>
             </div>
+            <p>Conoce que es Abitat</p>
         </div>
     </div>
 </template>
