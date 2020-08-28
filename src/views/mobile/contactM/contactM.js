@@ -114,7 +114,7 @@ export default {
                 }
             }
             if(send){
-                let url = 'Https://func-backend-abitat-dev.azurewebsites.net/api/SetHandymanLandingPage?code=dVYEQFelotF/1dEazDKdVXibNZamarpeYVhNl8YpD6Hg3vVMuziKUA=='
+                let url = 'https://func-backend-abitat-landing-dev.azurewebsites.net/api/SetHandymanLandingPage?code=UG93IRwVhUx/amVZzSDpcYmkSR0/gaaR3TUFldZuqBTBJaWZeOwuyQ=='
                 this.axios({
                     method:'POST',
                     url:url,
