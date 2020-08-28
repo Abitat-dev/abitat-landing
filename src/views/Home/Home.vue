@@ -21,7 +21,7 @@
       <span @click="stop" class="material-icons">
         close
       </span>
-      <iframe width="800" height="500" :src="'https://www.youtube.com/embed/o-RYtJdinQs?autoplay='+autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
+      <iframe width="800" height="500" :src="'https://www.youtube.com/embed/8rEd6_rRMfU?autoplay='+autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
     </div>
   </div>
 </template>

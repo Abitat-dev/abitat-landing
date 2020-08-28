@@ -15,7 +15,7 @@ export default {
     },
     methods: {
         play(){
-            window.open('https://www.youtube.com/watch?v=o-RYtJdinQs')
+            window.open('https://www.youtube.com/embed/8rEd6_rRMfU')
         }
     },
 }

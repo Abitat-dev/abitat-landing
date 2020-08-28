@@ -5,7 +5,6 @@
          <img src="../../../assets/abitat-light.png" alt="check">
         </div>
             <h1>
-               
                 {{title}}
             </h1>
             <p>
@@ -24,8 +23,6 @@
             </div>
             
         </div>
-
-        
         <div id="play">
             <div class="btn_play" @click="play()">
                <i class="fas fa-play" style="color:#FF9A23"></i>

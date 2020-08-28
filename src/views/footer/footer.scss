@@ -1,0 +1,42 @@
+$foo:75px;
+.footer{
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    height: $foo;
+    width: 100vw;
+    min-width: $foo;
+    max-height: $foo;
+    min-height: $foo;
+    display: flex;
+    justify-content: center;
+    #division{
+        display: flex;
+        flex-direction: row;
+        width: 90vw;
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: $foo;
+        }
+        section:first-child{
+            span:first-child{
+                color: orange;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+        section:last-child{
+            text-align: end;
+            span{
+                img{
+                    width: 30px;
+                    margin-right: 5px;
+                    filter: invert(100%);
+                }
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+}

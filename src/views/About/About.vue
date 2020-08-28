@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <div id="deck">
+    <div class="container" id="deck">
       <div class="card" v-for="item of cards" :key="item.id">
         <div :style="line(item.image)" class="circle"></div>
         <div class="image">

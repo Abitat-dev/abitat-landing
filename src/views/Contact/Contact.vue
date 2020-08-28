@@ -13,7 +13,7 @@
         <div id="image">
             <img :src="require(`../../assets/${images.notification}`)" alt="notification">
         </div>
-        <form id="formulario" @submit.prevent="submit">
+        <form class="container" id="formulario" @submit.prevent="submit">
             <div id="title">
                 <span>{{texto.title}}</span>
                 <br>

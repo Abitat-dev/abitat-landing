@@ -24,6 +24,12 @@
           <ContactM/>
         </div>
       </section>
+      
+      <footer id="footer">
+        <div class="desktop-contact d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
+          <Footer/>
+        </div>
+      </footer>
   </v-app>
 </template>
 <script src="https://kit.fontawesome.com/e0d2f08eea.js" crossorigin="anonymous"></script>
@@ -34,6 +40,7 @@ import About from './views/About/About.vue';
 import Contact from './views/Contact/Contact.vue';
 import HomeM from './views/mobile/homeM/homeM.vue';
 import ContactM from './views/mobile/contactM/contactM.vue';
+import Footer from './views/footer/footer.vue';
  
 export default {
   name: 'App',
@@ -42,7 +49,8 @@ export default {
     About,
     Contact,
     HomeM,
-    ContactM
+    ContactM,
+    Footer
   },
 
   data: () => ({
